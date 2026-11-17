@@ -104,5 +104,6 @@ Você pode personalizar o comportamento do servidor em produção definindo as s
    * Botão de **Página de Teste** no rodapé para validar a comunicação com a impressora sem sujar o banco de dados.
 2. **Painel PCP (`/pcp`):**
    * Tabela consolidada com total de paletes e unidades produzidas no dia atual.
+   * Tabela de resumo diário com separação clara entre paletes **com selo** e **sem selo** por produto e linha.
    * Histórico detalhado dos últimos 200 registros com badges de status.
    * Botão **Baixar Relatório Completo em Excel (`/exportar-excel`)** gerando a planilha em memória.
