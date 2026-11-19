@@ -242,6 +242,7 @@ SQLite, tabela `producao`:
 | `selo` | `COM SELO`, `SEM SELO` ou vazio (produto sem selo) |
 | `status` | `Em Produção`, `Reimpressão`, `Pendente` ou `Erro de Impressão` |
 
+<<<<<<< HEAD
 Somente registros com status **Em Produção** entram nas somas do relatório. Reimpressões e falhas
 ao gerar a etiqueta não somam.
 
@@ -280,3 +281,15 @@ do primeiro registro dele.
 | Sistema parou de responder | Um clique dentro da janela preta pausa o programa: clique nela e aperte Enter. |
 
 Mais detalhes no `GUIA_INSTALACAO_PCP.pdf`.
+=======
+1. **Painel do Operador (`/`):**
+   * Seleção global de turno.
+   * Cartões por produto com cálculo dinâmico do lote do dia (`AAMMDD-LXX`).
+   * Botão **Imprimir Novo Palete** (gera novo SSCC e contabiliza na produção) e **Reimprimir Última** (reimprime o último palete válido daquele SKU com marcação de *REIMPRESSÃO* sem duplicar a contagem).
+   * Botão de **Página de Teste** no rodapé para validar a comunicação com a impressora sem sujar o banco de dados.
+2. **Painel PCP (`/pcp`):**
+   * Tabela consolidada com total de paletes e unidades produzidas no dia atual.
+   * Tabela de resumo diário com separação clara entre paletes **com selo** e **sem selo** por produto e linha.
+   * Histórico detalhado dos últimos 200 registros com badges de status.
+   * Botão **Baixar Relatório Completo em Excel (`/exportar-excel`)** gerando a planilha em memória.
+>>>>>>> 046faee555a9d9a21b5f79a9d9592824e99fb7d7
